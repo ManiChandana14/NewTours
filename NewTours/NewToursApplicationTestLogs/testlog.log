@@ -1,0 +1,18 @@
+2020-03-17 12:01:57,804 - com.NewTours.LogInTest -INFO -  Launched Chrome Browser Successfully 
+2020-03-17 12:02:00,951 - com.NewTours.LogInTest -INFO -  Successfully navigated to NewTours Application 
+2020-03-17 12:02:05,928 - com.NewTours.LogInTest -INFO - Entered UserName Successfully
+2020-03-17 12:02:06,047 - com.NewTours.LogInTest -INFO -  Entered Password Successfully 
+2020-03-17 12:02:13,024 - com.NewTours.LogInTest -INFO -  Clicked on LogIn Button 
+2020-03-17 12:02:13,025 - com.NewTours.LogInTest -INFO - Expected title Find
+2020-03-17 12:02:13,035 - com.NewTours.LogInTest -INFO - Actual title Find a Flight: Mercury Tours:
+2020-03-17 12:02:13,036 - com.NewTours.LogInTest -INFO -  LogIn Successfull - PASS
+2020-03-17 12:02:14,458 - com.NewTours.LogInTest -INFO -  Application closed Successfully 
+2020-03-17 12:03:30,715 - com.NewTours.LogInTest -INFO -  Launched Chrome Browser Successfully 
+2020-03-17 12:03:33,027 - com.NewTours.LogInTest -INFO -  Successfully navigated to NewTours Application 
+2020-03-17 12:03:37,330 - com.NewTours.LogInTest -INFO - Entered UserName Successfully
+2020-03-17 12:03:37,427 - com.NewTours.LogInTest -INFO -  Entered Password Successfully 
+2020-03-17 12:03:44,182 - com.NewTours.LogInTest -INFO -  Clicked on LogIn Button 
+2020-03-17 12:03:44,183 - com.NewTours.LogInTest -INFO - Expected title Find
+2020-03-17 12:03:44,199 - com.NewTours.LogInTest -INFO - Actual title Find a Flight: Mercury Tours:
+2020-03-17 12:03:44,200 - com.NewTours.LogInTest -INFO -  LogIn Successfull - PASS
+2020-03-17 12:03:45,180 - com.NewTours.LogInTest -INFO -  Application closed Successfully 

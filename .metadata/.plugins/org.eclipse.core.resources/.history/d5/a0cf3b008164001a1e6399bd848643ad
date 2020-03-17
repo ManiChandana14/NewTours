@@ -1,0 +1,14 @@
+package com.TestNG;
+
+public class LinkedIn {
+
+	public static void main(String[] args) {
+		
+		String url="http://www.linkedin.com/login";
+		String Username="";
+		String Password="";
+		
+
+	}
+
+}

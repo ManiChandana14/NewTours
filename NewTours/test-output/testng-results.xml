@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21351" started-at="2020-03-17T06:33:23Z" finished-at="2020-03-17T06:33:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21351" started-at="2020-03-17T06:33:23Z" finished-at="2020-03-17T06:33:45Z">
+      <class name="com.NewTours.LogInTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.NewTours.LogInTest@23fe1d71]" name="setUp" is-config="true" duration-ms="13341" started-at="2020-03-17T06:33:23Z" finished-at="2020-03-17T06:33:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logInTest()[pri:0, instance:com.NewTours.LogInTest@23fe1d71]" name="logInTest" duration-ms="7002" started-at="2020-03-17T06:33:37Z" finished-at="2020-03-17T06:33:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.NewTours.LogInTest@23fe1d71]" name="tearDown" is-config="true" duration-ms="975" started-at="2020-03-17T06:33:44Z" finished-at="2020-03-17T06:33:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.NewTours.LogInTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

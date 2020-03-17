@@ -1,0 +1,61 @@
+package com.NewToursApplication_WebPages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class NewTours_LogInPage {
+	
+	// <a href="mercurysignon.php">SIGN-ON</a>
+	
+	// WebElement signOn=driver.findElement(By.linkText("SIGN-ON"));
+	// signOn.click();
+
+	// Identification of the Element on the Webpage
+	@FindBy(linkText="SIGN-ON")
+	WebElement signOn;
+	
+	public void SignOn()
+	{
+		signOn.click();
+	}
+	
+	// <a href="mercuryregister.php">REGISTER</a>
+	
+	@FindBy(linkText="REGISTER")
+	WebElement register;
+	
+	public void Register()
+	{
+		register.click();
+	}
+	
+	@FindBy(name="userName")
+	WebElement userName;
+	
+
+	@FindBy(name="password")
+	WebElement password;
+	
+	@FindBy(name="login")
+	WebElement signIn;
+	
+	
+	public void logIn(String uName,String pwd)
+	{
+		userName.clear();
+		userName.sendKeys(uName);
+		
+		password.clear();
+		password.sendKeys(pwd);
+		signIn.click();
+	}
+	
+	@FindBy(linkText="SUPPORT")
+	WebElement support;
+	
+	public void Support()
+	{
+		support.click();
+	}
+
+}

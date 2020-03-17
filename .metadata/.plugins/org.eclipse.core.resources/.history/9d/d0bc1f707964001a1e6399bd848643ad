@@ -1,0 +1,91 @@
+package com.StepDefinition;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class OrangeHRMLogIn {
+	
+	WebDriver driver = null;
+	String url="http://opensource-demo.orangehrmlive.com/";
+	String Username="Admin";
+	String Password="admin123";
+	
+	@Given("^Open Chrome browser & navigate to OrangeHRM application$")
+	public void Open_Chrome_browser_navigate_to_OrangeHRM_application() throws Throwable {
+		
+		System.setProperty("webdriver.chrome.driver", "./driverFiles/chromedriver.exe");
+		driver=new ChromeDriver();
+		
+		driver.get(url);
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		WebElement logInPanelElement = driver.findElement(By.id("logInPanelHeading"));
+		String logInPanelText = logInPanelElement.getText();
+		System.out.println("The Login Panel Element text is: "+logInPanelText);
+		
+		if(logInPanelText.equals("LOGIN Panel"))
+		{
+			System.out.println("Login Panel found");
+		}
+		else
+		{
+			System.out.println("Login Panel not found");
+		}
+		
+	}
+
+	@When("^User enters userName & Password and click on logIn button$")
+	public void User_enters_userName_Password_and_click_on_logIn_button() throws Throwable {
+	    
+		WebElement userName = driver.findElement(By.id("txtUsername"));
+		userName.sendKeys(Username);
+		WebElement password = driver.findElement(By.id("txtPassword"));
+		password.sendKeys(Password);
+		WebElement logInButton = driver.findElement(By.id("btnLogin"));
+		logInButton.click();
+		
+	}
+
+	@Then("^User should be able to successfully logIn to the OrangeHRM application & close the application$")
+	public void User_should_be_able_to_successfully_logIn_to_the_OrangeHRM_application_close_the_application() throws Throwable {
+	    
+		WebElement AdminElement = driver.findElement(By.id("welcome"));
+		String AdminText = AdminElement.getText();
+		
+		if(AdminText.contains("Admin"))
+		{
+			System.out.println("Logged into Orange HRM application as Admin");
+		}
+		else
+		{
+			System.out.println("Orange HRM application Login failed");
+		}
+		
+		List<WebElement>links = driver.findElements(By.tagName("a"));
+		int linksCount = links.size();
+		System.out.println("The total number of links on the Orange HRM Home Page are: "+linksCount);
+		
+		
+		AdminElement.click();
+	
+		//<a href="/index.php/auth/logout">Logout</a>
+		//WebElement logOut = driver.findElement(By.linkText("Logout"));
+		//logOut.click();
+				
+		//driver.quit();
+		
+	}
+
+
+}

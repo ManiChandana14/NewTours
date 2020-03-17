@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/selenium-server-standalone-3.141.59.jar" sourcepath="/Selenium"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/cucumber-core-1.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/cucumber-java-1.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/cucumber-junit-1.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/cucumber-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/cucumber-reporting-0.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/gherkin-2.12.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DELL/Desktop/Library-LiveTech/cucumber jar/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

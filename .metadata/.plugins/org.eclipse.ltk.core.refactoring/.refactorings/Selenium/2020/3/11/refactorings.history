@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NewTours - Login.xlsx&apos; to &apos;Automation/src/excelData&apos;&#x0D;&#x0A;- Original project: &apos;Selenium&apos;&#x0D;&#x0A;- Destination element: &apos;Automation/src/excelData&apos;&#x0D;&#x0A;- Original element: &apos;NewTours - Login.xlsx&apos;" description="Copy file" destination="=Automation/src&lt;excelData" element1="src/excel_Data/NewTours - Login.xlsx" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1583678661333" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,18 @@
+[main] INFO com.NewTours.LogInTest -  Launched Chrome Browser Successfully 
+[main] INFO com.NewTours.LogInTest -  Successfully navigated to NewTours Application 
+[main] INFO com.NewTours.LogInTest - Entered UserName Successfully
+[main] INFO com.NewTours.LogInTest -  Entered Password Successfully 
+[main] INFO com.NewTours.LogInTest -  Clicked on LogIn Button 
+[main] INFO com.NewTours.LogInTest - Expected title Find
+[main] INFO com.NewTours.LogInTest - Actual title Find a Flight: Mercury Tours:
+[main] INFO com.NewTours.LogInTest -  LogIn Successfull - PASS
+[main] INFO com.NewTours.LogInTest -  Application closed Successfully 
+[main] INFO com.NewTours.LogInTest -  Launched Chrome Browser Successfully 
+[main] INFO com.NewTours.LogInTest -  Successfully navigated to NewTours Application 
+[main] INFO com.NewTours.LogInTest - Entered UserName Successfully
+[main] INFO com.NewTours.LogInTest -  Entered Password Successfully 
+[main] INFO com.NewTours.LogInTest -  Clicked on LogIn Button 
+[main] INFO com.NewTours.LogInTest - Expected title Find
+[main] INFO com.NewTours.LogInTest - Actual title Find a Flight: Mercury Tours:
+[main] INFO com.NewTours.LogInTest -  LogIn Successfull - PASS
+[main] INFO com.NewTours.LogInTest -  Application closed Successfully 

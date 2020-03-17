@@ -1,0 +1,50 @@
+package com.NewTours;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class LogInTest 
+{
+	
+	
+	WebDriver driver = null;
+	String url="http://newtours.demoaut.com/";
+	
+	@BeforeTest
+	public void setUp()
+	{
+		System.setProperty("webdriver.chrome.driver", "./driverFiles/chromedriver.exe");
+		driver=new ChromeDriver();
+		
+		driver.get(url);
+		driver.manage().window().maximize();
+	}
+	
+	@AfterTest
+	public void tearDown()
+	{
+		driver.quit();
+	}
+	
+	
+	@Test
+	public void logInTest()
+	{
+		WebElement userName = driver.findElement(By.id("userName"));
+		userName.sendKeys("tutorial");
+		WebElement password = driver.findElement(By.id("password"));
+		password.sendKeys("tutorial");
+		WebElement logInButton = driver.findElement(By.id("login"));
+		logInButton.click();
+	}
+	
+	
+	
+	
+
+}

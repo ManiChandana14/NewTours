@@ -1,0 +1,54 @@
+package com.TestNG;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class LinkedIn {
+
+	public static void main(String[] args) {
+		
+		String url="http://www.linkedin.com/login";
+		String Username="soorada.kaushik@gmail.com";
+		String Password="Buddi7987";
+		
+		System.setProperty("webdriver.chrome.driver", "./driverFiles/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get(url);
+		driver.manage().window().maximize();
+		
+		WebElement email = driver.findElement(By.id("username"));
+		email.sendKeys(Username);
+		
+		WebElement password = driver.findElement(By.id("password"));
+		password.sendKeys(Password);
+		
+		//<button class="btn__primary--large from__button--floating" data-control-urn="login-submit" type="submit" aria-label="Sign in">Sign in</button>
+		WebElement signIn = driver.findElement(By.tagName("button"));
+		signIn.click();
+		
+		//<span id="jobs-tab-icon" class="nav-item__icon" lang="en" role="presentation"><li-icon aria-hidden="true" type="nav-small-jobs-icon" color="true"><svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M2,13H22v6a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V13ZM22,8v4H2V8A1,1,0,0,1,3,7H7V6a3,3,0,0,1,3-3h4a3,3,0,0,1,3,3V7h4A1,1,0,0,1,22,8ZM15,6a1,1,0,0,0-1-1H10A1,1,0,0,0,9,6V7h6V6Z" class="active-item" style="fill-opacity: 1"></path><path d="M21,7H17V6a3,3,0,0,0-3-3H10A3,3,0,0,0,7,6V7H3A1,1,0,0,0,2,8V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V8A1,1,0,0,0,21,7ZM9,6a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V7H9V6ZM20,18H4V13H20v5Zm0-6H4V9H20v3Z" class="inactive-item" style="fill: currentColor"></path></svg></li-icon></span>
+		WebElement jobs = driver.findElement(By.id("jobs-tab-icon"));
+		jobs.click();
+				
+		WebElement searchJobs = driver.findElement(By.className("jobs-search-box__inner ember-view"));
+		Actions act = new Actions(driver);
+		act.moveToElement(searchJobs);
+		act.click().perform();
+		searchJobs.sendKeys("java developer");
+		
+		WebElement searchLocation = driver.findElement(By.className("jobs-search-box__input jobs-search-box__input--location"));
+		act.moveToElement(searchLocation);
+		act.click().perform();
+		searchLocation.sendKeys("canada");
+				
+		WebElement searchButton = driver.findElement(By.tagName("button"));
+		searchButton.click();
+		
+
+	}
+
+}
